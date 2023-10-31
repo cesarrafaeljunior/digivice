@@ -28,6 +28,26 @@
   border-radius: 8px;
 }
 
+button{
+
+  width: 70px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: 1000;
+
+  bottom: 8.2rem;
+  right: 30rem;
+
+  background-color: transparent;
+}
+
+button:hover{
+  background-color: rgb(255,255,0,30%);
+}
+
 @media (min-width: 720px) {
   .digivice-device > figure > img {
     width: 400px;

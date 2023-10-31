@@ -1,9 +1,6 @@
 <section class="digivice-device">
   <figure>
-    <img
-      src="assets/digiviceDevice.png"
-      alt=""
-    />
+    <img src="assets/digiviceDevice.png" alt="" />
     <img
       *ngIf="selectedDigimon?.img; else noImage"
       class="digimon-screen"
@@ -17,5 +14,8 @@
         alt="{{ selectedDigimon?.name }}"
       />
     </ng-template>
+    <button title="filter name"></button>
+    <button title="filter name"></button>
+    <button title="filter name"></button>
   </figure>
 </section>
