@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DigimonService } from '../services/digimon.service';
 import { Observable, map } from 'rxjs';
 
-interface DigimonList {
+export interface iDigimon {
   name: string;
   img: string;
   level: string;
@@ -14,7 +14,8 @@ interface DigimonList {
   styleUrls: ['./digimon-list.component.css'],
 })
 export class DigimonListComponent implements OnInit {
-  digimonList$: Observable<DigimonList[]> = new Observable<DigimonList[]>();
+  
+  digimonList$: Observable<iDigimon[]> = new Observable<iDigimon[]>();
 
   constructor(private digimonService: DigimonService) {}
 
