@@ -1,0 +1,12 @@
+.digivice-device figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digivice-device img {
+  width: 300px;
+  height: 300px;
+
+  margin-top: -1.8rem;
+}
