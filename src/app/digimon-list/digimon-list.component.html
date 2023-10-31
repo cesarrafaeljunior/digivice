@@ -7,42 +7,10 @@
     <span class="decoration-span"></span>
   </div>
   <section class="digimons-list-cards">
-    <li>
-      <img
-        src="https://digimon.shadowsmith.com/img/koromon.jpg"
-        alt="Digimon"
-      />
-    </li>
-    <li>
-      <img
-        src="https://digimon.shadowsmith.com/img/koromon.jpg"
-        alt="Digimon"
-      />
-    </li>
-    <li>
-      <img
-        src="https://digimon.shadowsmith.com/img/koromon.jpg"
-        alt="Digimon"
-      />
-    </li>
-    <li>
-      <img
-        src="https://digimon.shadowsmith.com/img/koromon.jpg"
-        alt="Digimon"
-      />
-    </li>
-    <li>
-      <img
-        src="https://digimon.shadowsmith.com/img/koromon.jpg"
-        alt="Digimon"
-      />
-    </li>
-    <li>
-      <img
-        src="https://digimon.shadowsmith.com/img/koromon.jpg"
-        alt="Digimon"
-      />
-    </li>
+    <app-digimon-card
+      *ngFor="let digimon of digimonList$ | async"
+      [digimonData]="digimon"
+    ></app-digimon-card>
   </section>
   <section class="digimons-list-informations">
     <li>
