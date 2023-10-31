@@ -4,7 +4,18 @@
       src="https://wikimon.net/images/thumb/8/8f/Digivice_tri_sora.png/200px-Digivice_tri_sora.png"
       alt=""
     />
-    <div class="digimon-screen">
-    </div>
+    <img
+      *ngIf="selectedDigimon?.img; else noImage"
+      class="digimon-screen"
+      [src]="selectedDigimon?.img"
+      alt="{{ selectedDigimon?.name }}"
+    />
+    <ng-template #noImage>
+      <img
+        class="digimon-screen"
+        src="https://digimon.shadowsmith.com/img/koromon.jpg"
+        alt="{{ selectedDigimon?.name }}"
+      />
+    </ng-template>
   </figure>
 </section>
