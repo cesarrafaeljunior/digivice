@@ -1,4 +1,7 @@
 .bg {
+  display: flex;
+  align-items: center;
+
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -8,6 +11,6 @@
   background-repeat: no-repeat;
 }
 
-.section-digimon-list{
+.section-digimon-list {
   padding: 0 0.5rem;
 }
