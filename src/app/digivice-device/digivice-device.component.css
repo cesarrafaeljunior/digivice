@@ -1,4 +1,4 @@
-.digivice-device figure {
+.digivice-device > figure {
   position: relative;
 
   display: flex;
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.digivice-device img {
+.digivice-device > figure > img {
   width: 300px;
   height: 300px;
 
@@ -15,15 +15,17 @@
   object-fit: cover;
 }
 
-.digimon-screen {
+.digivice-device > figure > .digimon-screen {
   position: absolute;
-  bottom: 6.9rem;
+  bottom: 6.7rem;
   right: center;
 
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
 
   background-color: white;
+
+  border-radius: 8px;
 }
 
 @media (min-width: 720px) {
@@ -33,9 +35,9 @@
   }
 
   .digimon-screen {
-    bottom: 9.1rem;
+    bottom: 0;
 
-    width: 110px;
-    height: 110px;
+    width: 80px;
+    height: 80px;
   }
 }
