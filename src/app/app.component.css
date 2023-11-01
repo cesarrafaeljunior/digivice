@@ -3,7 +3,7 @@
   align-items: center;
 
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   object-fit: cover;
   background-image: url("https://img.freepik.com/free-vector/red-watercolor-background_1378-184.jpg?w=826&t=st=1698751660~exp=1698752260~hmac=7cdc23d27a915278ca878c230aff8aec43fb50d24443e5e339db645a8504e7ae");
   background-size: cover;

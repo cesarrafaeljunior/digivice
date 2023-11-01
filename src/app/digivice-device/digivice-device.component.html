@@ -17,21 +17,24 @@
       title="previous-digimon"
       class="previous-digimon"
     ></button>
-    <button (click)="clickShowInformations()" title="select-digimon" class="select-digimon"></button>
-  </figure>
-  <div class="attachment">
+    <button
+      (click)="clickShowInformations()"
+      title="select-digimon"
+      class="select-digimon"
+    ></button>
 
-  </div>
-  <section class="digimons-list-informations">
-    <li *ngIf="isOpen">
-      <div>
-        <p class="label-digimon">Nome</p>
-        <p>{{ selectedDigimon?.name }}</p>
-      </div>
-      <div>
-        <p class="label-digimon">Level</p>
-        <p>{{ selectedDigimon?.level }}</p>
-      </div>
-    </li>
-  </section>
+    <section class="digimons-list-informations">
+      <li *ngIf="isOpen">
+        <div>
+          <p class="label-digimon">Nome</p>
+          <p>{{ selectedDigimon?.name }}</p>
+        </div>
+        <div>
+          <p class="label-digimon">Level</p>
+          <p>{{ selectedDigimon?.level }}</p>
+        </div>
+      </li>
+    </section>
+    <div class="attachment"></div>
+  </figure>
 </section>
