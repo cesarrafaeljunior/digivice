@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SelectedDigimonService } from '../services/selected-digimon.service';
 import { iDigimon } from '../digimon-list/digimon-list.component';
-import { DigimonService } from '../services/digimon.service';
 
 @Component({
   selector: 'app-digivice-device',
@@ -10,12 +9,17 @@ import { DigimonService } from '../services/digimon.service';
 })
 export class DigiviceDeviceComponent implements OnInit {
   selectedDigimon: iDigimon | null = null;
+  isOpen: boolean = false;
 
   constructor(private selectedDigimonService: SelectedDigimonService) {}
 
   ngOnInit() {
     this.selectedDigimonService.selectedDigimon$.subscribe((digimonList$) => {
       this.selectedDigimon = digimonList$;
+    });
+
+    this.selectedDigimonService.selectedInformation$.subscribe((isOpen$) => {
+      this.isOpen = isOpen$;
     });
   }
 
@@ -25,5 +29,9 @@ export class DigiviceDeviceComponent implements OnInit {
 
   clickToPreviousDigimon() {
     this.selectedDigimonService.navigateToPrevious();
+  }
+
+  clickShowInformations() {
+    this.selectedDigimonService.showInformations(this.isOpen);
   }
 }

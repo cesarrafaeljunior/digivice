@@ -9,9 +9,12 @@ import { DigimonService } from './digimon.service';
 export class SelectedDigimonService {
   private selectedDigimonSubject = new BehaviorSubject<iDigimon | null>(null);
   private selectedIndexSubject = new BehaviorSubject<number>(0);
+  private showInformationsSubject = new BehaviorSubject<boolean>(false);
 
   selectedDigimon$ = this.selectedDigimonSubject.asObservable();
   selectedIndex$ = this.selectedIndexSubject.asObservable();
+  selectedInformation$ = this.showInformationsSubject.asObservable();
+  
   private digimons: iDigimon[] = [];
   private currentIndex = -1;
 
@@ -43,5 +46,9 @@ export class SelectedDigimonService {
       this.currentIndex--;
       this.selectedDigimonSubject.next(this.digimons[this.currentIndex]);
     }
+  }
+
+  showInformations(isOpen:boolean){
+    this.showInformationsSubject.next(!isOpen);
   }
 }
