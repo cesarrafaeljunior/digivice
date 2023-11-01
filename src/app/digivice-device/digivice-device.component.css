@@ -1,4 +1,14 @@
+.digivice-device{
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
 .digivice-device > figure {
+
+  width: 320px;
+
   position: relative;
 
   display: flex;
@@ -28,24 +38,40 @@
   border-radius: 8px;
 }
 
-button{
-
-  width: 70px;
-  height: 52px;
-
-  border-radius: 50%;
-
+.digivice-device > figure > button {
   position: absolute;
   z-index: 1000;
 
-  bottom: 8.2rem;
-  right: 30rem;
+  width: 55px;
+  height: 40px;
+
+  border-radius: 50%;
 
   background-color: transparent;
+
+  border: none;
+
 }
 
-button:hover{
-  background-color: rgb(255,255,0,30%);
+.digivice-device > figure > button:hover {
+  background-color: rgb(255, 255, 0, 50%);
+}
+
+.digivice-device > figure > .next-digimon {
+  bottom: 10.1rem;
+  right: 2.4rem;
+}
+
+.digivice-device > figure > .previous-digimon {
+  bottom: 6.1rem;
+  right: 2.4rem;
+}
+
+.digivice-device > figure > .select-digimon {
+  height: 51px;
+
+  bottom: 7.7rem;
+  left: 2rem;
 }
 
 @media (min-width: 720px) {
@@ -60,4 +86,28 @@ button:hover{
     width: 110px;
     height: 110px;
   }
+
+  .digivice-device > figure > button{
+    width: 70px;
+    height: 51px;
+  }
+
+  .digivice-device > figure > .next-digimon {
+    bottom: 13.5rem;
+    right: 0;
+  }
+  
+  .digivice-device > figure > .previous-digimon {
+    bottom: 8.3rem;
+    right: 0;
+  }
+  
+  .digivice-device > figure > .select-digimon {
+    height: 70px;
+  
+    bottom: 10.3rem;
+    left: -0.6rem;
+  }
+
+
 }

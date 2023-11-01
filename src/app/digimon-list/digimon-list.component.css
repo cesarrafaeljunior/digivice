@@ -18,15 +18,33 @@
   gap: 2rem;
 }
 
-.digimons-list-header .icon-arrow {
-  position: static;
-  z-index: 2;
+.digimons-list-header .box-input{
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digimons-list-header .box-input > input {
+  height: 35px;
+
+  padding: 0 1rem;
+
+  border-radius: 8px;
+
+  outline: none;
+  border: none;
+}
+
+.digimons-list-header .icon{
+  position: absolute;
+  top: 0;
+  right: 0;
 
   font-size: 2rem;
 
-  background-color: red;
-
-  color: white;
+  color: rgb(85, 85, 85);
 
   border-radius: 0 5px 5px 0;
 }
