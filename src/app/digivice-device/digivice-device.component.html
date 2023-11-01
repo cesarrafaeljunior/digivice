@@ -2,20 +2,21 @@
   <figure>
     <img src="assets/digiviceDevice.png" alt="" />
     <img
-      *ngIf="selectedDigimon?.img; else noImage"
+      *ngIf="selectedDigimon?.img"
       class="digimon-screen"
       [src]="selectedDigimon?.img"
       alt="{{ selectedDigimon?.name }}"
     />
-    <ng-template #noImage>
-      <img
-        class="digimon-screen"
-        src="https://digimon.shadowsmith.com/img/koromon.jpg"
-        alt="{{ selectedDigimon?.name }}"
-      />
-    </ng-template>
-    <button title="next-digimon" class="next-digimon"></button>
-    <button title="previous-digimon" class="previous-digimon"></button>
+    <button
+      (click)="clickToNextDigimon()"
+      title="next-digimon"
+      class="next-digimon"
+    ></button>
+    <button
+      (click)="clickToPreviousDigimon()"
+      title="previous-digimon"
+      class="previous-digimon"
+    ></button>
     <button title="select-digimon" class="select-digimon"></button>
   </figure>
 </section>
