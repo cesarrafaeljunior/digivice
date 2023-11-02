@@ -141,7 +141,7 @@
 .digimons-list-informations .label-digimon {
   font-weight: bold;
   font-size: 1.1rem;
-  color: var(--coloPrimary);
+  color: var(--colorPrimary);
 }
 
 .digimons-list-informations p {
@@ -263,7 +263,6 @@
   .digimons-list-informations .label-digimon {
     font-weight: bold;
     font-size: 1.1rem;
-    color: var(--colorPrimary);
   }
 
   .digimons-list-informations p {
