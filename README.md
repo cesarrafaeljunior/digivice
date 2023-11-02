@@ -8,7 +8,7 @@ Além disso, o Digivice inclui recursos de filtro, permitindo aos usuários filt
 
 <hr>
 
-<div style="display:flex;justify-content:center;align-items:center;width:100%"><img src="./src/assets/Digivice.png" style="width: 700px; height: 450px"/></div>
+<div style="display:flex;justify-content:center;align-items:center"><img src="./src/assets/Digivice.png" style="width: 700px; height: 450px"/></div>
 
 ## Deploy da aplicação
 
