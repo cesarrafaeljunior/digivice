@@ -17,7 +17,7 @@ export class DigimonListComponent implements OnInit {
   digimonList$: Observable<iDigimon[]> = new Observable<iDigimon[]>();
   inputDigimonName: string = '';
   selectLevelDigimon: string = '';
-  errorMessage: string = ""
+  errorMessage: string = '';
 
   constructor(private digimonService: DigimonService) {}
 
@@ -54,7 +54,7 @@ export class DigimonListComponent implements OnInit {
         map((response) => {
           return response;
         })
-      )
+      );
   }
 
   searchDigimonByLevel() {
@@ -64,6 +64,14 @@ export class DigimonListComponent implements OnInit {
         map((response) => {
           return response;
         })
-      )
+      );
+  }
+
+  clearFilters() {
+    this.digimonList$ = this.digimonService.getAllDigimons().pipe(
+      map((response) => {
+        return response;
+      })
+    );
   }
 }
