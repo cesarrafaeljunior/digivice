@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, catchError } from 'rxjs';
 import { iDigimon } from '../digimon-list/digimon-list.component';
 
 @Injectable({
@@ -16,10 +16,20 @@ export class DigimonService {
   }
 
   getDigimonByName(name: string): Observable<any> {
-    return this.httpClient.get(`${this.apiUrl}/name/${name}`);
+    return this.httpClient.get(`${this.apiUrl}/name/${name}`).pipe(
+      catchError((response) => {
+        console.log(response.error)
+        return this.getAllDigimons();
+      })
+    );
   }
 
   getDigimonByLevel(level: string): Observable<any> {
-    return this.httpClient.get(`${this.apiUrl}/level/${level}`);
+    return this.httpClient.get(`${this.apiUrl}/level/${level}`).pipe(
+      catchError((response) => {
+        console.log(response.error)
+        return this.getAllDigimons();
+      })
+    );
   }
 }

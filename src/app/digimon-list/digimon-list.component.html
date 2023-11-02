@@ -30,6 +30,7 @@
     </div>
   </div>
   <section class="digimons-list-cards">
+    <p *ngIf="errorMessage" style="color: white">{{ errorMessage }}</p>
     <app-digimon-card
       *ngFor="let digimon of digimonList$ | async"
       [digimonData]="digimon"

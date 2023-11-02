@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DigimonService } from '../services/digimon.service';
-import { Observable, map } from 'rxjs';
+import { BehaviorSubject, Observable, catchError, map, of } from 'rxjs';
 
 export interface iDigimon {
   name: string;
@@ -16,7 +16,8 @@ export interface iDigimon {
 export class DigimonListComponent implements OnInit {
   digimonList$: Observable<iDigimon[]> = new Observable<iDigimon[]>();
   inputDigimonName: string = '';
-  selectLevelDigimon: string = ""
+  selectLevelDigimon: string = '';
+  errorMessage: string = ""
 
   constructor(private digimonService: DigimonService) {}
 
@@ -37,8 +38,7 @@ export class DigimonListComponent implements OnInit {
     }
   }
 
-
-  onSelectChange(event: Event){
+  onSelectChange(event: Event) {
     const target = event.target as HTMLInputElement | null;
 
     if (target) {
@@ -54,7 +54,7 @@ export class DigimonListComponent implements OnInit {
         map((response) => {
           return response;
         })
-      );
+      )
   }
 
   searchDigimonByLevel() {
@@ -64,6 +64,6 @@ export class DigimonListComponent implements OnInit {
         map((response) => {
           return response;
         })
-      );
+      )
   }
 }
