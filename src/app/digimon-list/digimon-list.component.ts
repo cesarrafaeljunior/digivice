@@ -14,8 +14,8 @@ export interface iDigimon {
   styleUrls: ['./digimon-list.component.css'],
 })
 export class DigimonListComponent implements OnInit {
-  
   digimonList$: Observable<iDigimon[]> = new Observable<iDigimon[]>();
+  inputDigimonName: string = '';
 
   constructor(private digimonService: DigimonService) {}
 
@@ -25,5 +25,24 @@ export class DigimonListComponent implements OnInit {
         return response;
       })
     );
+  }
+
+  onInputChange(event: Event) {
+    const target = event.target as HTMLInputElement | null;
+
+    if (target) {
+      const inputValue = target.value;
+      this.inputDigimonName = inputValue;
+    }
+  }
+
+  searchDigimonByName() {
+    this.digimonList$ = this.digimonService
+      .getDigimonByName(this.inputDigimonName)
+      .pipe(
+        map((response) => {
+          return response;
+        })
+      );
   }
 }

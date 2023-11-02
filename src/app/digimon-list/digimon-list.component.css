@@ -30,6 +30,11 @@
   justify-content: center;
 }
 
+.digimons-list-header .box-input > button {
+  background-color: transparent;
+  border: none;
+}
+
 .digimons-list-header > .box-select {
   width: 68%;
 

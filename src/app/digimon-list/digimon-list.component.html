@@ -4,8 +4,14 @@
       <p>Digimons</p>
     </div>
     <div class="box-input">
-      <input type="text" placeholder="Nome do digimon" />
-      <i class="material-icons icon">search</i>
+      <input
+        (input)="onInputChange($event)"
+        type="text"
+        placeholder="Nome do digimon"
+      />
+      <button (click)="searchDigimonByName()">
+        <i class="material-icons icon">search</i>
+      </button>
     </div>
     <div class="box-select">
       <select name="trainings" id="trainings">
