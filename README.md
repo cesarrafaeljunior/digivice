@@ -1,27 +1,27 @@
-# Digivice
+<h1 align="center"> Digivice </h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+<hr>
 
-## Development server
+<p> O Digivice é uma aplicação que interage com uma API de Digimon. Ele permite aos usuários navegar por uma lista de Digimons e selecioná-los para visualização dentro de um Dispositivo Digimon. Além disso, o Digivice oferece funcionalidades de navegação, como botões para avançar e retroceder entre os Digimons exibidos. Também é possível obter informações detalhadas de um Digimon selecionado.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Além disso, o Digivice inclui recursos de filtro, permitindo aos usuários filtrar a lista de Digimons por nome e nível, resultando em uma renderização personalizada da lista de Digimons com base nos critérios de filtragem selecionados.</p>
 
-## Code scaffolding
+<hr>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Deploy da aplicação
 
-## Build
+<a href="https://digivice-six.vercel.app/">Abrir aplicação</a>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Tecnologias utilizadas:
+ - Angular Framework
+ - Typescript
+ - HTML
+ - CSS
 
-## Running unit tests
+### Api Utilizada
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- <a href="https://digimon-api.vercel.app/">Api digimon</a>
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Digivice-Api
+- <a href="[#doc](https://github.com/cesarrafaeljunior/digivice_api)https://github.com/cesarrafaeljunior/digivice_api">Abrir api</a>
+<hr>
