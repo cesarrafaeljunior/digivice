@@ -15,8 +15,6 @@
 
   width: 320px;
 
-  border: solid 1px blue;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,7 +86,7 @@
   width: 8rem;
   height: 2rem;
 
-  background-color: #484848;
+  background: linear-gradient(90deg, rgba(73,73,73,1) 0%, rgba(54,54,54,1) 54%, rgba(82,82,82,1) 91%);
 
   border: solid 1px rgb(19, 19, 19);
 
@@ -109,8 +107,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  overflow-x: auto;
 }
 
 .digimons-list-informations li {
@@ -123,7 +119,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 
-  background-color: #383838;
+  background: linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(54,54,54,1) 54%, rgba(47,47,47,1) 91%);
 
   border: solid 2px rgb(32, 32, 32);
 
@@ -234,15 +230,19 @@
 
   .digimons-list-informations {
     top: 5rem;
-    right: -12.4rem;
+    right: -12.8rem;
   }
 
   .digimons-list-informations li {
-    flex-direction: column;
-
+   
+    min-width: 200px;
     min-height: 186px;
 
     padding: 0 1rem;
+
+    justify-content: center;
+
+    gap: 2rem;
 
     border-radius: 0 8px 8px 0;
 
@@ -258,7 +258,7 @@
 
     flex-direction: row;
 
-    margin-top: 1.5rem;
+    margin-top: 0;
 
     gap: 1rem;
   }
