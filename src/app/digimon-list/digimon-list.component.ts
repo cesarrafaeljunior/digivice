@@ -16,6 +16,7 @@ export interface iDigimon {
 export class DigimonListComponent implements OnInit {
   digimonList$: Observable<iDigimon[]> = new Observable<iDigimon[]>();
   inputDigimonName: string = '';
+  selectLevelDigimon: string = ""
 
   constructor(private digimonService: DigimonService) {}
 
@@ -36,9 +37,29 @@ export class DigimonListComponent implements OnInit {
     }
   }
 
+
+  onSelectChange(event: Event){
+    const target = event.target as HTMLInputElement | null;
+
+    if (target) {
+      const selectValue = target.value;
+      this.selectLevelDigimon = selectValue;
+    }
+  }
+
   searchDigimonByName() {
     this.digimonList$ = this.digimonService
       .getDigimonByName(this.inputDigimonName)
+      .pipe(
+        map((response) => {
+          return response;
+        })
+      );
+  }
+
+  searchDigimonByLevel() {
+    this.digimonList$ = this.digimonService
+      .getDigimonByLevel(this.selectLevelDigimon)
       .pipe(
         map((response) => {
           return response;

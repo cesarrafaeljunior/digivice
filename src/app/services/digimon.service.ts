@@ -18,4 +18,8 @@ export class DigimonService {
   getDigimonByName(name: string): Observable<any> {
     return this.httpClient.get(`${this.apiUrl}/name/${name}`);
   }
+
+  getDigimonByLevel(level: string): Observable<any> {
+    return this.httpClient.get(`${this.apiUrl}/level/${level}`);
+  }
 }
