@@ -8,6 +8,8 @@ Além disso, o Digivice inclui recursos de filtro, permitindo aos usuários filt
 
 <hr>
 
+<img src=Digimon.png" alt="Digimon"/>
+
 #### Deploy da aplicação
 
 <a href="https://digivice-six.vercel.app/">Abrir aplicação</a>
@@ -25,5 +27,11 @@ Além disso, o Digivice inclui recursos de filtro, permitindo aos usuários filt
 #### Digivice-Api
 
 - <a href="https://github.com/cesarrafaeljunior/digivice_api">Abrir api</a>
+
+#### Tecnologias utilizadas:
+ - Java 17.0.6
+ - Spring Boot 3.1.5
+ - Maven
+ - IntelliJ
 
 <hr>
