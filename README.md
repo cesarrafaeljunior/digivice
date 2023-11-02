@@ -10,11 +10,11 @@ Além disso, o Digivice inclui recursos de filtro, permitindo aos usuários filt
 
 <div style="display:flex;justify-content:center; width: 100%"><img src="./src/assets/Digivice.png" style="width: 700px; height: 450px"/></div>
 
-#### Deploy da aplicação
+## Deploy da aplicação
 
 <a href="https://digivice-six.vercel.app/">Abrir aplicação</a>
 
-#### Tecnologias utilizadas:
+### Tecnologias utilizadas:
  - Angular Framework
  - Typescript
  - HTML
@@ -26,7 +26,7 @@ Além disso, o Digivice inclui recursos de filtro, permitindo aos usuários filt
 
 <hr>
 
-#### Digivice-Api
+##### Digivice-Api
 
 <p>Api secundário que consome a api de digimons:</p>
 
