@@ -1,10 +1,7 @@
 .digivice-device {
-
-
   display: flex;
 
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
 }
@@ -88,7 +85,7 @@
 
   background: linear-gradient(90deg, rgba(73,73,73,1) 0%, rgba(54,54,54,1) 54%, rgba(82,82,82,1) 91%);
 
-  border: solid 1px rgb(19, 19, 19);
+  border: solid 1px var(--grey4);
 
   border-radius: 8px;
 
@@ -121,7 +118,7 @@
 
   background: linear-gradient(90deg, rgba(54,54,54,1) 0%, rgba(54,54,54,1) 54%, rgba(47,47,47,1) 91%);
 
-  border: solid 2px rgb(32, 32, 32);
+  border: solid 2px var(--grey4);
 
   border-radius: 0 0 8px 8px;
 
@@ -144,11 +141,11 @@
 .digimons-list-informations .label-digimon {
   font-weight: bold;
   font-size: 1.1rem;
-  color: rgb(252, 248, 15);
+  color: var(--coloPrimary);
 }
 
 .digimons-list-informations p {
-  color: rgb(255, 255, 255);
+  color: var(--white);
 }
 
 @media (min-width: 720px) {
@@ -266,11 +263,11 @@
   .digimons-list-informations .label-digimon {
     font-weight: bold;
     font-size: 1.1rem;
-    color: rgb(252, 248, 15);
+    color: var(--colorPrimary);
   }
 
   .digimons-list-informations p {
-    color: rgb(255, 255, 255);
+    color: var(--white);
   }
 }
 

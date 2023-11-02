@@ -6,7 +6,7 @@
 
   margin-top: 1rem;
 
-  background-color: black;
+  background-color: var(--black);
 
   border-radius: 8px;
 }
@@ -98,9 +98,9 @@
 
   font-size: 2rem;
 
-  color: rgb(133, 133, 133);
+  color: var(--grey);
 
-  border-left: solid 1px rgb(165, 165, 165);
+  border-left: solid 1px var(--grey2);
 
   border-radius: 0 5px 5px 0;
 
@@ -108,7 +108,7 @@
 }
 
 .digimons-list-header .icon:hover {
-  color: rgb(179, 179, 179);
+  color: var(--grey2);
 }
 
 .digimons-list-header .digimons-list-title {
@@ -123,7 +123,7 @@
 
   font-size: 1rem;
 
-  background-color: yellow;
+  background-color: var(--colorPrimary);
 
   border-radius: 8px;
 }
@@ -144,7 +144,7 @@
   justify-content: center;
   gap: 0.5rem;
 
-  border: solid 1px rgb(73, 73, 73);
+  border: solid 1px var(--grey3);
 
   overflow-y: auto;
 }
@@ -154,16 +154,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1b1b1b;
+  background: var(--grey4);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e41111;
+  background: var(--colorSecondary);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b40000;
+  background: var(--colorSecondary);
 }
 
 @media (min-width: 1280px) {
