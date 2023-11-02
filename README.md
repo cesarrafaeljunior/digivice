@@ -23,5 +23,7 @@ Além disso, o Digivice inclui recursos de filtro, permitindo aos usuários filt
 - <a href="https://digimon-api.vercel.app/">Api digimon</a>
 
 #### Digivice-Api
-- <a href="[#doc](https://github.com/cesarrafaeljunior/digivice_api)https://github.com/cesarrafaeljunior/digivice_api">Abrir api</a>
+
+- <a href="https://github.com/cesarrafaeljunior/digivice_api">Abrir api</a>
+
 <hr>
