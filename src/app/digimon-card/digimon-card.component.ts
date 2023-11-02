@@ -10,10 +10,11 @@ import { iDigimon } from '../digimon-list/digimon-list.component';
 })
 export class DigimonCardComponent {
   @Input() digimonData: any;
+  @Input() index:any
 
   constructor(private selectedDigimonService: SelectedDigimonService) {}
 
   public onCardClick(digimon: iDigimon) {
-    this.selectedDigimonService.setSelectedDigimon(digimon);
+    this.selectedDigimonService.setSelectedDigimon(digimon,this.index);
   }
 }

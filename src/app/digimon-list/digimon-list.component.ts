@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DigimonService } from '../services/digimon.service';
-import { BehaviorSubject, Observable, catchError, map, of } from 'rxjs';
+import {Observable,  map } from 'rxjs';
+import { SelectedDigimonService } from '../services/selected-digimon.service';
 
 export interface iDigimon {
   name: string;
@@ -19,7 +20,7 @@ export class DigimonListComponent implements OnInit {
   selectLevelDigimon: string = '';
   errorMessage: string = '';
 
-  constructor(private digimonService: DigimonService) {}
+  constructor(private digimonService: DigimonService, private selectedDigimonService:SelectedDigimonService) {}
 
   ngOnInit(): void {
     this.digimonList$ = this.digimonService.getAllDigimons().pipe(

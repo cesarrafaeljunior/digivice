@@ -7,7 +7,7 @@
       <input
         (input)="onInputChange($event)"
         type="text"
-        placeholder="Nome do digimon"
+        placeholder="Insiria o nome do Digimon"
       />
       <button (click)="searchDigimonByName()">
         <i class="material-icons icon">search</i>
@@ -16,7 +16,7 @@
     <div class="box-select">
       <select (change)="onSelectChange($event)" name="trainings" id="trainings">
         <optgroup>
-          <option value="empty">Selecione o Level</option>
+          <option value="empty">Selecione o Level do Digimon</option>
           <option value="In Training">In Training</option>
           <option value="Rookie">Rookie</option>
           <option value="Champion">Champion</option>
@@ -33,8 +33,9 @@
   <section class="digimons-list-cards">
     <p *ngIf="errorMessage" style="color: white">{{ errorMessage }}</p>
     <app-digimon-card
-      *ngFor="let digimon of digimonList$ | async"
+      *ngFor="let digimon of digimonList$ | async; let i = index"
       [digimonData]="digimon"
+      [index]="i"
     ></app-digimon-card>
   </section>
 </ul>

@@ -59,6 +59,12 @@
   transition: ease-in-out 1s;
 }
 
+.digimons-list-header > .box-select > button ~button {
+  width: 50%;
+
+  align-self: center;
+}
+
 .digimons-list-header > .box-select > button:hover{
   background: linear-gradient(90deg, rgba(234,231,12,1) 0%, rgba(217,213,68,1) 54%, rgba(224,204,40,1) 91%);
 }
