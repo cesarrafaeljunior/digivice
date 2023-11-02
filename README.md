@@ -28,13 +28,13 @@ Além disso, o Digivice inclui recursos de filtro, permitindo aos usuários filt
 
 #### Digivice-Api
 
-<p>Api secundário que consome a api de digimons</p>p
- - Java 17.0.6
- - Spring Boot 3.1.5
- - Maven
- - IntelliJ
+<p>Api secundário que consome a api de digimons</p>
+- Java 17.0.6
+- Spring Boot 3.1.5
+- Maven
+- IntelliJ
 
- - <a href="https://github.com/cesarrafaeljunior/digivice_api">Abrir api</a>
+<a href="https://github.com/cesarrafaeljunior/digivice_api">Abrir api</a>
  
 <hr>
 
