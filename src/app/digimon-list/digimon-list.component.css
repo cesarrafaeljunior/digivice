@@ -7,6 +7,8 @@
   margin-top: 1rem;
 
   background-color: black;
+
+  border-radius: 8px;
 }
 
 .digimons-list-header {
@@ -56,7 +58,6 @@
 
   transition: ease-in-out 1s;
 }
-
 
 .digimons-list-header > .box-select > button:hover{
   background: linear-gradient(90deg, rgba(234,231,12,1) 0%, rgba(217,213,68,1) 54%, rgba(224,204,40,1) 91%);
@@ -140,6 +141,23 @@
   border: solid 1px rgb(73, 73, 73);
 
   overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e41111;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b40000;
 }
 
 @media (min-width: 1280px) {
